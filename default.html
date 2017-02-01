@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>  <meta charset="UTF-8">  <title>Tower of Hanoi</title>  
+<script type="text/javascript" src = logic.js></script>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<div id="container">
+
+<div id="bar0"><img src="Bar.png" /></div>
+<div id="bar1"><img src="Bar.png" /></div>
+<div id="bar2"><img src="Bar.png" /></div>
+
+<div id="bottombar"></div>
+
+<div class="disk" id="disk0" ><img class="insideImg"  style="left:94px;"  src="Bar2.png" /></div> 
+<div class="disk" id="disk1" ><img class="insideImg"  style="left:74px;"  src="Bar2.png" /></div> 
+<div class="disk" id="disk2" ><img class="insideImg"  style="left:54px;"  src="Bar2.png" /></div> 
+<div class="disk" id="disk3" ><img class="insideImg"  style="left:34px;"  src="Bar2.png" /></div> 
+<div class="disk" id="disk4" ><img class="insideImg"  style="left:14px;"  src="Bar2.png" /></div> 
+
+
+<button onclick="executeHanoi()" >Play</button>
+
+<button onclick="pauseHanoi()" >Pause</button>
+
+<button onclick="nextHanoi()" >Next</button>
+ 
+<label>No. of Disks<select id="diskSelectList" >
+<option  value="5" >5 disks</option>
+<option  value="4" >4 disks</option>
+<option  value="3" >3 disks</option>
+</select>
+</label>
+
+</div> 
+</body>
+</html>
